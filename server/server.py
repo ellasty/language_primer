@@ -32,7 +32,7 @@ def get_groups():
     Route to get all groups
     return: Array of group objects
     """
-    return groups
+    return jsonify(groups)
 
 @app.route('/api/students', methods=['GET'])
 def get_students():
@@ -40,7 +40,7 @@ def get_students():
     Route to get all students
     return: Array of student objects
     """
-    return students
+    return jsonify(students)
 
 @app.route('/api/groups', methods=['POST'])
 def create_group():
